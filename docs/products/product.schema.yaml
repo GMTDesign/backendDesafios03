@@ -1,0 +1,42 @@
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        _id:
+          type: String
+          description: id del producto
+        title:
+          type: String
+          description: nombre del producto
+        description:  
+          type: String
+          description: descripción del producto
+        code:
+          type: String
+          description: código del producto
+        price:
+          type: Number
+          description: precio del producto
+        status:
+          type: Boolean
+          description: estado o disponibilidad del producto
+        stock:
+          type: Number
+          description: stock del producto
+        category:
+          type: String
+          description: categoría del producto
+        thumbnails: 
+          type: Array
+          description: imágenes del producto
+      example:
+        _id: 'go703fmcjdu48y2200dsa'
+        title: 'Guitarra acústica'
+        description: 'Instrumento de cuerda.'
+        code: 'C-350'
+        price: 250000
+        status: true
+        stock: 150
+        category: 'cuerda'
+        thumbnails: [guitarra_01.jpg, guitarra_02.jpg]

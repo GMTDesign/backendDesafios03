@@ -1,0 +1,117 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "carts",
+    "dateExported": "2024-01-28T00:18:54.124Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d668d8d0-29e7-4037-bd2c-c69eee8a4472",
+            "colId": "5cbe7874-233a-4716-9568-a681692d9f46",
+            "containerId": "",
+            "name": "obtener carrito",
+            "url": "http://localhost:8080/api/carts/e9758e06-1567-4b25-8939-9016f7d31fe0",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-27T08:04:28.631Z",
+            "modified": "2024-01-27T22:05:18.712Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a386730c-55ef-4c19-961f-ea3469b2ea42",
+            "colId": "5cbe7874-233a-4716-9568-a681692d9f46",
+            "containerId": "",
+            "name": "crear carrito",
+            "url": "http://localhost:8080/api/carts/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-27T08:06:54.861Z",
+            "modified": "2024-01-27T08:07:08.161Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6312f411-2e79-4c1f-bc25-61a3aafb2160",
+            "colId": "5cbe7874-233a-4716-9568-a681692d9f46",
+            "containerId": "",
+            "name": "agregar producto al carrito",
+            "url": "http://localhost:8080/api/carts/f331268e-cdba-4e89-a518-2f7865fce46e/product/7d94cc63-85ec-44bd-94ca-dc98755c0560",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-01-27T08:07:42.843Z",
+            "modified": "2024-01-27T08:08:54.445Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7aa163d3-cfed-41b8-962a-d1a1968a4945",
+            "colId": "5cbe7874-233a-4716-9568-a681692d9f46",
+            "containerId": "",
+            "name": "actualizar carrito",
+            "url": "http://localhost:8080/api/carts/f331268e-cdba-4e89-a518-2f7865fce46e",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-01-27T08:09:47.288Z",
+            "modified": "2024-01-27T08:10:09.275Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2394ca8a-97bb-4cbd-a866-7b981016421b",
+            "colId": "5cbe7874-233a-4716-9568-a681692d9f46",
+            "containerId": "",
+            "name": "actualizar cantidad de un producto",
+            "url": "http://localhost:8080/api/carts/f331268e-cdba-4e89-a518-2f7865fce46e/product/7d94cc63-85ec-44bd-94ca-dc98755c0560",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-01-27T08:11:09.889Z",
+            "modified": "2024-01-27T08:11:47.341Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "newQuantity",
+                        "value": "5"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "25418678-0611-4979-a0c0-2fd8879f66b2",
+            "colId": "5cbe7874-233a-4716-9568-a681692d9f46",
+            "containerId": "",
+            "name": "vaciar carrito",
+            "url": "http://localhost:8080/api/carts/f331268e-cdba-4e89-a518-2f7865fce46e",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-01-27T08:13:08.809Z",
+            "modified": "2024-01-27T08:13:27.866Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c69b4d5c-d6c9-4a61-8928-7f020df4b0cc",
+            "colId": "5cbe7874-233a-4716-9568-a681692d9f46",
+            "containerId": "",
+            "name": "eliminar un producto del carrito",
+            "url": "http://localhost:8080/api/carts/f331268e-cdba-4e89-a518-2f7865fce46e/product/7d94cc63-85ec-44bd-94ca-dc98755c0560",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-01-27T08:19:13.631Z",
+            "modified": "2024-01-27T08:19:28.041Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

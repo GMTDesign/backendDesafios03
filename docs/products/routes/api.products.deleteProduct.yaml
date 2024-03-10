@@ -1,0 +1,21 @@
+paths:
+  /api/products/{pid}:
+    delete:  
+      summary: elimina el producto indicado
+      tags:
+      - Products
+      parameters:
+      - name: id
+        in: path
+        required: true
+        type: String
+        description: id del producto a eliminar
+      responses:
+        "200":
+          description: producto eliminado
+          content:
+            application/json:
+              schema:
+                $ref: '#components/schemas/Product'
+        "404":
+          description: producto a eliminar no encontrado

@@ -1,0 +1,21 @@
+paths:
+  /api/carts/{cid}:
+    get:
+      summary: devuelve el carrito solicitado
+      tags:
+      - Carts
+      parameters:
+      - name: cid
+        in: path
+        required: true
+        type: String
+        description: id del carrito solicitado
+      responses:
+        "200":
+          description: devuelve el carrito solicitado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Cart'
+        "404":
+          description: carrito no encontrado

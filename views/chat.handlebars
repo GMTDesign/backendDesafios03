@@ -1,0 +1,17 @@
+<h2>Chat</h2>
+<div class="container-fluid justify-content-center w-25">
+    <form id="chatForm">
+        <label for="userEmail">E-mail</label>
+        <input type="text" name="email" id="email" required="true">
+        <label for="message">Ingrese el mensaje</label>
+        <input type="text" name="message" id="message" required="true">
+        <input type="submit" value="enviar">
+    </form>
+</div>
+<div>
+    <ul id="showMessages"></ul>
+</div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/static/js/chat.js"></script>

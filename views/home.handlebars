@@ -1,0 +1,41 @@
+<h2>Productos</h2>
+<h3>Logueado</h3>
+<p>Correo electrónico: <span id="email"></span></p>
+<p>Carrito asignado: <span id="cartId"></span></p>
+
+<form>
+    <button type="submit">Logout</button>
+</form>
+
+{{#if productsFlag}}
+<div class="container-fluid d-flex justify-content-center row" id="productContainer">
+  {{#each docs}}
+  <div class="card m-2" style="width: 18rem;" id="prodCard">
+    {{#each this.thumbnails}}
+    <img src="static/images/{{this}}" class="card-img-top" alt="img">
+    {{/each}}
+    <div class="card-body">
+      <h5 class="card-title">{{this.title}}</h5>
+      <p class="card-text">{{this.description}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Código: {{this.code}}</li>
+      <li class="list-group-item">Precio: ${{this.price}}</li>
+      <li class="list-group-item">Stock: {{this.stock}}</li>
+      <li class="list-group-item">Categoría: {{this.category}}</li>
+      <li class="list-group-item">Id: {{this._id}}</li>
+    </ul>
+    <button class="btn btn-primary m-2" id={{this._id}}>Agregar Producto</button>
+  </div>
+  {{/each}}
+</div>
+{{else}}
+<h3>No hay productos</h3>
+{{/if}}
+<a {{#if hasPrevPage }} href="/?limit={{limit}}&page={{prevPage}}" {{/if}}>Página anterior</a>
+[{{page}}]
+<a {{#if hasNextPage }} href="/?limit={{limit}}&page={{nextPage}}" {{/if}}>Página siguiente</a>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/static/js/home.js"></script>

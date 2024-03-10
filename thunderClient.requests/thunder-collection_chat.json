@@ -1,0 +1,51 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "chat",
+    "dateExported": "2024-01-28T00:19:03.026Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e7a9dd03-604b-42d7-9e75-e4654ca316e6",
+            "colId": "34412370-ef89-4af6-a6fb-3b7abb35bcc4",
+            "containerId": "",
+            "name": "leer mensajes",
+            "url": "http://localhost:8080/api/chat",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-27T08:58:09.590Z",
+            "modified": "2024-01-27T08:58:41.639Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "113eda99-0771-42d1-93f6-4d1d2aa2ea8b",
+            "colId": "34412370-ef89-4af6-a6fb-3b7abb35bcc4",
+            "containerId": "",
+            "name": "enviar mensaje",
+            "url": "http://localhost:8080/api/chat",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-27T08:58:55.738Z",
+            "modified": "2024-01-27T09:07:32.423Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "user",
+                        "value": "gabi@gabi.com"
+                    },
+                    {
+                        "name": "message",
+                        "value": "holahola"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}

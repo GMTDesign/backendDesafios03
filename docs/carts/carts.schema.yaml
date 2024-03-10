@@ -1,0 +1,15 @@
+components:
+  schemas:
+    Cart:
+      type: object
+      properties:
+        _id:
+          type: String
+          description: id del carrito
+        products:
+          type: Array
+      example:
+        _id: '38ec88c3-b176-49d2-9338-7be5d8e47f1e'
+        products: [{product: 'js5w3hf893u39hjskjh3rydj', quantity: 10}]
+        
+        

@@ -1,0 +1,15 @@
+.logo {
+    width: 25%;
+    height: 25%;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+div ul {
+    list-style-type: none;
+    margin-left: 100px;
+}

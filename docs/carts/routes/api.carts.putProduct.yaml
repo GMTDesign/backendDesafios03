@@ -1,0 +1,32 @@
+paths:
+  /api/carts/{cid}/product/{pid}:
+    put:
+      summary: modifica la cantidad del producto seleccionado en el carrito indicado
+      tags:
+      - Carts
+      parameters:
+      - name: cid
+        in: path
+        required: true
+        type: String
+        description: id del carrito seleccionado
+      - name: pid
+        in: path
+        required: true
+        type: String
+        description: id del producto a agregar
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#components/requestBodies/UpdateProduct'
+      responses:
+        "200":
+          description: devueve el carrito con el producto agregado
+          content:
+            application/json:
+              schema:
+                $ref: '#components/schemas/Cart'
+        "404":
+          description: carrito no encontrado  

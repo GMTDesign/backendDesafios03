@@ -1,0 +1,13 @@
+paths:
+  /api/carts:
+    post:
+      summary: crea un nuevo carrito
+      tags:
+      - Carts
+      responses:
+        "201":
+          description: nuevo carrito creado
+          content:
+            application/json:
+              schema:
+                $ref: '#components/schemas/CreatedCart'

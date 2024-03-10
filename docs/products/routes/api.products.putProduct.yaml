@@ -1,0 +1,27 @@
+paths:
+  /api/products/{pid}:
+   put:
+      summary: modifica el producto indicado
+      tags:
+      - Products
+      parameters:
+      - name: id
+        in: path
+        required: true
+        type: String
+        description: id del producto a modificar
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#components/requestBodies/UpdateProductDto'
+      responses:
+        "200":
+          description: producto actualizado
+          content:
+            application/json:
+              schema:
+                $ref: '#components/schemas/Product'
+        "400":
+          description: error al crear el producto (datos faltantes o inválidos)

@@ -1,0 +1,130 @@
+[
+  {
+    "id": "e0169657-ccb5-4aa0-b458-b9cc5bb638ec",
+    "title": "Guitarra acústica",
+    "description": "Instrumento de cuerda.",
+    "code": "C-325",
+    "price": 25000,
+    "status": true,
+    "stock": 100,
+    "category": "cuerda",
+    "thumbnails": [
+      "guitarra_01.jpg"
+    ]
+  },
+  {
+    "id": "f9faffe7-40fd-4121-9450-e23287d04c50",
+    "title": "Guitarra eléctrica",
+    "description": "Instrumento de cuerda.",
+    "code": "C-330",
+    "price": 50000,
+    "status": true,
+    "stock": 120,
+    "category": "cuerda",
+    "thumbnails": [
+      "guitarra_03.jpg"
+    ]
+  },
+  {
+    "id": "6246820c-9e8e-49a4-a5b9-403660eb8652",
+    "title": "Bajo eléctrico",
+    "description": "Instrumento de cuerda.",
+    "code": "C-335",
+    "price": 50000,
+    "status": true,
+    "stock": 50,
+    "category": "cuerda",
+    "thumbnails": [
+      "bajo_electrico.jpg"
+    ]
+  },
+  {
+    "id": "af2d6123-5ec6-4eac-b111-418e8881f627",
+    "title": "Trompeta",
+    "description": "Instrumento de viento.",
+    "code": "V-340",
+    "price": 25000,
+    "status": true,
+    "stock": 150,
+    "category": "viento",
+    "thumbnails": [
+      "trompeta.jpg"
+    ]
+  },
+  {
+    "id": "80b243fc-8bea-4465-9a7b-f9535a62174d",
+    "title": "Clarinete",
+    "description": "Instrumento de viento.",
+    "code": "V-345",
+    "price": 50000,
+    "status": true,
+    "stock": 55,
+    "category": "viento",
+    "thumbnails": []
+  },
+  {
+    "id": "ce3aca29-b28e-4047-9483-1c86d2b841d5",
+    "title": "Flauta dulce",
+    "description": "Instrumento de viento.",
+    "code": "V-350",
+    "price": 30000,
+    "status": true,
+    "stock": 50,
+    "category": "viento",
+    "thumbnails": [
+      "flauta_dulce.jpg"
+    ]
+  },
+  {
+    "id": "c035ca53-4ff3-461c-b8a4-3d39c50ac1ed",
+    "title": "Batería",
+    "description": "Instrumento de percusión.",
+    "code": "P-355",
+    "price": 100000,
+    "status": true,
+    "stock": 60,
+    "category": "percusion",
+    "thumbnails": [
+      "bateria.jpg"
+    ]
+  },
+  {
+    "id": "bb856ce0-534f-4c84-a979-7d815571e31d",
+    "title": "Bongos",
+    "description": "Instrumento de percusión.",
+    "code": "P-360",
+    "price": 30000,
+    "status": true,
+    "stock": 50,
+    "category": "percusion",
+    "thumbnails": [
+      "bongos.jpg"
+    ]
+  },
+  {
+    "id": "13cc3867-25ce-4740-8977-e65c5bc22f82",
+    "title": "Djembé",
+    "description": "Instrumento de percusión.",
+    "code": "P-365",
+    "price": 50000,
+    "status": true,
+    "stock": 35,
+    "category": "percusion",
+    "thumbnails": [
+      "djembe.jpg"
+    ]
+  },
+  {
+    "id": "e10c7312-09c2-487d-8353-9e12950d0542",
+    "title": "Guitarra acústica",
+    "description": "Instrumento de cuerda.",
+    "code": "C-370",
+    "price": 20000,
+    "status": true,
+    "stock": 50,
+    "category": "cuerda",
+    "thumbnails": [
+      "guitarra_02.jpg"
+    ]
+  }
+]

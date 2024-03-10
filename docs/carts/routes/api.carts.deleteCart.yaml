@@ -1,0 +1,22 @@
+paths:
+  /api/carts/{cid}:
+    delete:
+      summary: elimina el carrito indicado
+      tags:
+      - Carts
+      parameters:
+      - name: cid
+        in: path
+        required: true
+        type: String
+        description: id del carrito a eliminar
+      responses:
+        "200":
+          description: devuelve el carrito eliminado
+          content:
+            application/json:
+              schema:
+                $ref: '#components/schemas/Cart'
+        "404":
+          description: carrito no encontrado
+      

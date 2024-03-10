@@ -1,0 +1,19 @@
+paths:
+  /api/carts/{cid}:
+    put:
+      summary: actualiza la información del carrito indicado
+      tags:
+      - Carts
+      parameters:
+      - name: cid
+        in: path
+        required: true
+        type: String
+        description: id del carrito a actualizar
+      responses:
+        "200":
+          description: carrito actualizado
+          content:
+            application/json:
+              schema:
+                $ref: '#components/schemas/Cart'

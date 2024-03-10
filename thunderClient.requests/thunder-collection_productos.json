@@ -1,0 +1,121 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "productos",
+    "dateExported": "2024-01-28T00:08:19.905Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0446ddda-72d8-4021-8b56-ee36b62d8eca",
+            "colId": "0a2e5b59-3f91-411c-bc90-916d99e4b230",
+            "containerId": "",
+            "name": "obtener productos",
+            "url": "http://localhost:8080/api/products/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-27T06:30:10.867Z",
+            "modified": "2024-01-27T06:30:18.007Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "eff1a83e-c07a-454c-9062-40e194303e00",
+            "colId": "0a2e5b59-3f91-411c-bc90-916d99e4b230",
+            "containerId": "",
+            "name": "obtener un producto",
+            "url": "http://localhost:8080/api/products/a0fb8ad0-9a2a-4e1b-898b-7760dad57ec5",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-27T06:32:03.293Z",
+            "modified": "2024-01-27T06:36:14.749Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2f769bcc-2723-4a6d-81a9-961eb5a47ce7",
+            "colId": "0a2e5b59-3f91-411c-bc90-916d99e4b230",
+            "containerId": "",
+            "name": "crear un producto",
+            "url": "http://localhost:8080/api/products/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-27T06:33:18.548Z",
+            "modified": "2024-01-27T06:35:48.216Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "prueba"
+                    },
+                    {
+                        "name": "description",
+                        "value": "prueba"
+                    },
+                    {
+                        "name": "code",
+                        "value": "PRUEBA"
+                    },
+                    {
+                        "name": "price",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "category",
+                        "value": "cuerda"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "photo",
+                        "value": "c:\\Users\\Usuario\\Documents\\clases_CoderHouse\\reactJs_02\\preEntregas\\PreEntrega2_Morel\\musicworld\\public\\violin_02.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "365e77d2-98a1-4138-a92c-92a6e9983ef3",
+            "colId": "0a2e5b59-3f91-411c-bc90-916d99e4b230",
+            "containerId": "",
+            "name": "eliminar un producto",
+            "url": "http://localhost:8080/api/products/a0fb8ad0-9a2a-4e1b-898b-7760dad57ec5",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-01-27T06:36:30.767Z",
+            "modified": "2024-01-27T06:36:58.254Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a7e20622-5c8f-4448-a875-1906d3506405",
+            "colId": "0a2e5b59-3f91-411c-bc90-916d99e4b230",
+            "containerId": "",
+            "name": "modificar un producto",
+            "url": "http://localhost:8080/api/products/7d94cc63-85ec-44bd-94ca-dc98755c0560",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-01-27T06:37:57.887Z",
+            "modified": "2024-01-27T06:38:42.564Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "price",
+                        "value": "60000"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}

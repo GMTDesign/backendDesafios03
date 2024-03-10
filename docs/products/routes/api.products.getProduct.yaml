@@ -1,0 +1,21 @@
+paths:
+  /api/products/{pid}:
+    get:
+      summary: devuelve el producto solicitado
+      tags:
+      - Products
+      parameters:
+      - name: id
+        in: path
+        required: true
+        type: String
+        description: id del producto solicitado
+      responses:
+        "200":
+          description: devuelve el producto solicitado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        "404":
+          description: producto no encontrado

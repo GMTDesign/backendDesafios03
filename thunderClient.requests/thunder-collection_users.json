@@ -1,0 +1,63 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "users",
+    "dateExported": "2024-01-28T00:19:09.235Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "dbf282f6-9d27-4ad8-afe6-c4153333ead9",
+            "colId": "ceac07e2-c085-4268-98c4-30ebcfd35c21",
+            "containerId": "",
+            "name": "agregar usuario",
+            "url": "http://localhost:8080/api/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-27T22:41:06.569Z",
+            "modified": "2024-01-27T22:44:14.910Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "firstName",
+                        "value": "pepe"
+                    },
+                    {
+                        "name": "lastName",
+                        "value": "pepe"
+                    },
+                    {
+                        "name": "email",
+                        "value": "pepe@pepe.com"
+                    },
+                    {
+                        "name": "age",
+                        "value": "30"
+                    },
+                    {
+                        "name": "password",
+                        "value": "456"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "4e8bc76d-8225-4fc1-b086-9955a70ef4b5",
+            "colId": "ceac07e2-c085-4268-98c4-30ebcfd35c21",
+            "containerId": "",
+            "name": "obtener usuarios",
+            "url": "http://localhost:8080/api/users/current",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-27T22:55:45.088Z",
+            "modified": "2024-01-28T00:16:20.001Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
