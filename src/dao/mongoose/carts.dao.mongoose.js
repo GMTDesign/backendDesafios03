@@ -3,18 +3,19 @@ import { cartManager } from "../../models/mongooseModels/Cart.js"
 import { MONGO_URL } from "../../config/config.js"
 import { toPOJO } from "../../utils/toPojo.js"
 
+
 await mongoose.connect(MONGO_URL)
 console.log('Carritos: persistencia en MongoDB')
 
 class CartsDaoMongoose {
-    
+
     async readOne(cid) {
         const searched = await cartManager.find({ _id: cid }, { 'products._id': 0 }).lean()
         return toPOJO(searched)
     }
 
     async createCart(cartId) {
-        const newCart = await cartManager.create({_id: cartId, products: [] })
+        const newCart = await cartManager.create({ _id: cartId, products: [] })
         return toPOJO(newCart)
     }
 
@@ -35,7 +36,7 @@ class CartsDaoMongoose {
     }
 
     async deleteCart(cid) {
-        const deletedCart = await cartManager.findByIdAndUpdate(cid, { $set: {products: []} }, { new: true })
+        const deletedCart = await cartManager.findByIdAndUpdate(cid, { $set: { products: [] } }, { new: true })
         return toPOJO(deletedCart)
     }
 

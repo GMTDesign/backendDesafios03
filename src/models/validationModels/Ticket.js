@@ -1,7 +1,7 @@
 import { randomUUID } from 'crypto'
 import { neededValue } from '../../utils/neededValue.js'
 
-export class Product {
+export class Ticket {
     #amount
     #purchaser
     constructor({ id, code, purchase_datetime, amount, purchaser }) {

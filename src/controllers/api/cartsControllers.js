@@ -1,4 +1,6 @@
 import { cartsService } from "../../services/carts.service.js"
+import { ticketsService } from "../../services/tickets.service.js"
+
 
 export async function getByIdController(req, res) {
     const cid = req.params.cid
@@ -74,4 +76,13 @@ export async function deleteProductController (req, res) {
        return res.status(404).json({ message: 'producto inexistente'})
     }
     res.json(deletedProduct)
+}
+
+export async function postPurchaseController (req, res) {
+    const cid = req.params.cid
+    // acá desencripto el token y obtengo el email del comprador para pasarlo como parámetro al post
+    //a modo de elemplo lo hardcodeo
+    const email = 'gmt1971@hotmail.com'
+    const newTicket = await ticketsService.postTicket(cid, email)
+    res.json(newTicket)
 }

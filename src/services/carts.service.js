@@ -37,6 +37,11 @@ class CartsService {
         const deletedProduct = await cartsDaoMongoose.deleteProduct(cid, pid)
         return deletedProduct
     }
+
+    async postTicket(cid, email) {
+        const newTicket = await cartsDaoMongoose.createTicket(cid, email)
+        return newTicket
+    }
 }
 
 export const cartsService = new CartsService()
